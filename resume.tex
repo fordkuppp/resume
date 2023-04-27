@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome5}
 \input{glyphtounicode}
 
 
@@ -113,9 +114,11 @@
 
 \begin{center}
     \textbf{\Huge \scshape Patsakorn Boonkerd} \\ \vspace{1pt}
-    \href{mailto:fordpatsakorn@gmail.com}{\underline{fordpatsakorn@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/patsakorn-boonkerd}{\underline{linkedin.com/in/patsakorn-boonkerd}} $|$
-    \href{https://github.com/fordkuppp}{\underline{github.com/fordkuppp}}
+    \footnotesize{
+      \faIcon{envelope} \href{mailto:fordpatsakorn@gmail.com}{\underline{fordpatsakorn@gmail.com}} $|$ 
+      \faIcon{address-card} \href{https://fordkuppp.me/}{\underline{fordkuppp.me}} $|$ 
+      \faIcon{github} \href{https://github.com/fordkuppp}{\underline{github.com/fordkuppp}}
+    }
 \end{center}
 
 
@@ -124,7 +127,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Mahidol University International College}{Nakhon Pathom, Thailand}
-      {Bachelor of Science in Computer Science, Minor in Japanese}{Sep. 2019 -- Apr. 2024 (Expected)}
+      {Bachelor of Science in Computer Science, Minor in Japanese (GPA: 3.10)}{Sep. 2019 -- Apr. 2024 (Expected)}
   \resumeSubHeadingListEnd
 
 
@@ -190,20 +193,27 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
+        {\textbf{Spotify Quiz} (\href{https://github.com/spotify-quiz/spotify-quiz}{\underline{source}}, \href{https://spotify-quiz-silk.vercel.app/}{\underline{demo}}) $|$ \emph{NextJS, ReactJS, Playwright}}{}
+        \resumeItemListStart
+          \resumeItem{Developed a quiz web app using NextJS utilizing Spotify API with 4 other people}
+          \resumeItem{Integrated vercel for serverless web app}
+          \resumeItem{Used Playwright for e2e testing}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Novel Reader} (\href{https://github.com/fordkuppp/novel-reader}{\underline{source}}, \href{http://novel.fordkuppp.me/}{\underline{demo}}) $|$ \emph{Python, Flask, Jinja, MySQL}}{}
+        \resumeItemListStart
+          \resumeItem{Developed a full-stack content management system web application for novel with 2 other people}
+          \resumeItem{Design and implemented the schema for the web app}
+          \resumeItem{Worked on both frontend and backend}
+          \resumeItem{Implemented an account system completes with bookmarks for each user}
+        \resumeItemListEnd
+      \resumeProjectHeading
           {\textbf{Rust Chip8} (\href{https://github.com/fordkuppp/rust-chip8}{\underline{source}}) $|$ \emph{Rust, winit, cpal, pixels}}{}
           \resumeItemListStart
             \resumeItem{Developed an intepretor for Chip-8 programming language}
             \resumeItem{Used low level crates such as winit and cpal}
             \resumeItem{Implemented all opcodes according to the original specification}
             \resumeItem{Utilized multithreading to get accurate CPU cycle timing}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Novel Reader} (\href{https://github.com/fordkuppp/novel-reader}{\underline{source}}) $|$ \emph{Python, Flask, Jinja, MySQL}}{}
-          \resumeItemListStart
-            \resumeItem{Developed a full-stack content management system web application for novel with 2 other people}
-            \resumeItem{Design and implemented the schema for the web app}
-            \resumeItem{Worked on both frontend and backend}
-            \resumeItem{Implemented an account system completes with bookmarks for each user}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Travel Planner} $|$ \emph{Java, Spring MVC, JPA, Lombok, REST APIs}}{}
@@ -229,6 +239,15 @@
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
+%-----------PROJECTS-----------
+\section{Activities}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Codegoda}}{April 2023}
+        \resumeItemListStart
+          \resumeItem{Attended Agoda hosted code competition}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %-----------LANGUAGES SKILLS-----------
 \section{Languages Skills}
