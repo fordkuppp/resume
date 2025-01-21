@@ -116,7 +116,7 @@
     \textbf{\Huge \scshape Patsakorn Boonkerd} \\ \vspace{1pt}
     \footnotesize{
       \faIcon{envelope} \href{mailto:fordpatsakorn@gmail.com}{\underline{fordpatsakorn@gmail.com}} $|$ 
-      \faIcon{address-card} \href{https://info.fordkuppp.me/}{\underline{info.fordkuppp.me}} $|$ 
+      \faIcon{address-card} \href{https://fordkuppp.me/}{\underline{fordkuppp.me}} $|$ 
       \faIcon{github} \href{https://github.com/fordkuppp}{\underline{github.com/fordkuppp}} $|$
       \faIcon{phone} {\underline{+66 95 962 0846}}
     }
@@ -126,6 +126,16 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+    {Agoda}{September 2024 -- Present}
+    {Contract Software Developer (Backend)}{Bangkok, Thailand}
+    \resumeItemListStart
+      \resumeItem{Implemented client library for .NET Core application to avoid other services calling the API directly}
+      \resumeItem{Onboard an application to use consumer and provider contract test using Pact to test for discrepancies while migrating said client library}
+      \resumeItem{Oversee interns on how to migrate an application to use the new client library, and how to create Pact consumer and provider tests}
+      \resumeItem{Migrated Rabbit MQ message broker to Kafka to make the system more reliable and scalable}
+    \resumeItemListEnd
+
     \resumeSubheading
     {Freelance}{May 2024 -- July 2024 (2 months)}
     {Freelance Full Stack Software Engineer}{Bangkok, Thailand}
@@ -144,7 +154,6 @@
         \resumeItem{Automate email sending system to eliminate the need to manually send email to partners, improving efficiency}
         \resumeItem{Migrated large .NET Framework legacy application to .NET Core and deployed to Istio service mesh}
         \resumeItem{Visualized data using SQL in Apache Superset for our stakeholders}
-        \resumeItem{Worked in an Agile environment to enhance efficiency and productivity}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -165,19 +174,11 @@
         {\textbf{Homelab} $|$ \emph{Kubernetes, Proxmox, Docker, Portainer, Tailscale}}{}
         \resumeItemListStart
           \resumeItem{Installed and configured Proxmox  Virtual Environment on a personal server}
-          \resumeItem{Configured Kubernetes cluster on the server to make my applications scalable}
+          \resumeItem{Configured Kubernetes cluster on the server to make the applications scalable}
           \resumeItem{Configured cert-manager with nginx ingress controller to get SSL certificate}
           \resumeItem{Installed Prometheus and Grafana, and create dashboard to monitor nginx ingress}
           \resumeItem{Utilized Portainer to host various web applications and game servers on the VM }
           \resumeItem{Integrated Tailscale and WireGuard tunneling to enable secure remote access to local server and to bypass CGNAT}
-        \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{Novel Reader} (\href{https://github.com/fordkuppp/novel-reader}{\underline{source}}) $|$ \emph{Python, Flask, Jinja, MySQL}}{}
-        \resumeItemListStart
-          \resumeItem{Developed a full-stack content management system web application for novel with 2 other people}
-          \resumeItem{Design and implemented the schema for the web app}
-          \resumeItem{Worked on both frontend and backend}
-          \resumeItem{Implemented an account system completes with bookmarks for each user}
         \resumeItemListEnd
       \resumeProjectHeading
         {\textbf{Rust Chip8} (\href{https://github.com/fordkuppp/rust-chip8}{\underline{source}}) $|$ \emph{Rust, winit, cpal, pixels}}{}
@@ -186,13 +187,6 @@
           \resumeItem{Used low level crates such as winit and cpal}
           \resumeItem{Implemented all opcodes according to the original specification}
           \resumeItem{Utilized multithreading to get accurate CPU cycle timing}
-        \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{IC Shell} (\href{https://github.com/fordkuppp/icsh}{\underline{source}}) $|$ \emph{C}}{}
-        \resumeItemListStart
-          \resumeItem{Developed a shell program using C }
-          \resumeItem{Utilized parallelism to execute background and foreground jobs }
-          \resumeItem{Implemented most basic features such as redirection, scripting, and etc. }
         \resumeItemListEnd
     \resumeSubHeadingListEnd
 
