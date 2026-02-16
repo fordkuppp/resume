@@ -117,6 +117,7 @@
     \footnotesize{
       \faIcon{envelope} \href{mailto:fordpatsakorn@gmail.com}{\underline{fordpatsakorn@gmail.com}} $|$ 
       % \faIcon{address-card} \href{https://fordkuppp.me/}{\underline{fordkuppp.me}} $|$ 
+      \faIcon{linkedin} \href{https://www.linkedin.com/in/patsakorn-boonkerd/}{\underline{linkedin.com/in/patsakorn-boonkerd}} $|$
       \faIcon{github} \href{https://github.com/fordkuppp}{\underline{github.com/fordkuppp}} $|$
       \faIcon{phone} {\underline{+66 95 962 0846}}
     }
@@ -130,33 +131,26 @@
     {FlowAccount}{April 2025 -- Now}
     {Software Engineer (Infrastructure)}{Bangkok, Thailand}
     \resumeItemListStart
-      \resumeItem{Created and managed declarative EKS clusters using FluxCD for GitOps, Karpenter for autoscaling, and self-hosted GitHub Action Runners, reducing operating costs by approximately 50\% compared to Buildjet.}
+      \resumeItem{Provisioned and managed EKS clusters using Terraform, Terragrunt, FluxCD, and Karpenter.}
+      \resumeItem{Deployed self-hosted GitHub Action Runners on EKS, reducing CI/CD costs by ~50\% compared to Buildjet.}
+      \resumeItem{Configured External DNS, Gateway API, and External Secrets for DNS, ingress, and secret sync in EKS.}
+      \resumeItem{Built GitHub Actions pipeline to generate AMIs with pre-pulled images, reducing EKS node startup time.}
+      \resumeItem{Deployed ephemeral Jenkins on Kubernetes using JCasC, enabling declarative single-command provisioning.}
+      \resumeItem{Migrated Jenkins freestyle jobs to Shared Libraries and Jenkinsfiles with Job DSL for version-controlled configs.}
       \resumeItem{Integrated Grafana and Prometheus for monitoring and observability within EKS clusters.}
-      \resumeItem{Migrated and redesigned critical application logic from serverless Lambda to C\#.}
-      \resumeItem{Implemented RabbitMQ Dead Letter Queue with retry and reporting mechanisms to improve robustness.}
-      \resumeItem{Developed custom code analyzer rules for org-specific issues using Roslyn and enforced these rules during PRs.}
+      \resumeItem{Onboarded teams to create an alert system using JSM for real-time incident monitoring and response.}
       \resumeItem{Implemented a pseudo merge queue using GitHub Actions to streamline code integration processes.}
-      \resumeItem{Onboarded teams to create an alert system using JSM, enhancing real-time monitoring and response.}
     \resumeItemListEnd
 
     \resumeSubheading
     {Agoda}{September 2024 -- March 2025 (6 months)}
     {Contract Software Developer (Backend)}{Bangkok, Thailand}
     \resumeItemListStart
+      \resumeItem{Onboarded applications for disaster recovery by deploying to multiple datacenters using active-passive topology.}
+      \resumeItem{Migrated Kotlin Spring framework application to use Kafka instead of RabbitMQ.}
       \resumeItem{Implemented client library for .NET Core application to avoid other services calling the API directly.}
-      \resumeItem{Onboard an application to use consumer and provider contract test using Pact to test for discrepancies while migrating said client library.}
-      \resumeItem{Helped interns on how to migrate an application to use the new client library, and Pact contract tests.}
-      \resumeItem{Implemented a kill switch while migrating the application to use in an emergency in case the application failed.}
-      \resumeItem{Migrated Kotlin Spring framework application Kafka instead of Rabbit MQ.}
-      \resumeItem{Onboard applications for disaster recovery by deploying to multiple datacenter using active-passive topology.}
-    \resumeItemListEnd
-
-    \resumeSubheading
-    {Freelance}{May 2024 -- July 2024 (2 months)}
-    {Freelance Full Stack Software Engineer}{Bangkok, Thailand}
-    \resumeItemListStart
-      \resumeItem{Integrated crypto payment gateway solution (OxaPay) for an online entertainment website.}
-      \resumeItem{Developed user authentication and reset password functionalities using SolidJS and ExpressJS.}
+      \resumeItem{Onboarded consumer and provider contract testing using Pact to validate client library migration.}
+      \resumeItem{Implemented a kill switch for safe rollback during application migration in case of failure.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -164,13 +158,27 @@
       {Software Engineer Intern (Backend)}{Bangkok, Thailand}
       \resumeItemListStart
         \resumeItem{Integrated code coverage tool into the GitLab CI pipeline to block any merge requests with insufficient tests.}
-        \resumeItem{Developed new API endpoint using .NET Core to automate previously manual process.}
-        \resumeItem{Automate email sending system to eliminate the need to manually send email to partners.}
         \resumeItem{Migrated large .NET Framework legacy application to .NET Core and deployed to Istio service mesh.}
-        \resumeItem{Created new data visualization dashboard using SQL in Apache Superset.}
+        \resumeItem{Developed new API endpoint using .NET Core to automate previously manual process.}
+        \resumeItem{Automated email sending system to eliminate the need to manually send email to partners.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Homelab} $|$ \emph{Kubernetes, Proxmox, Terragrunt, Docker, OpenTelemetry, Mimir, Grafana, SOPS, Tailscale}}{}
+        \resumeItemListStart
+          \resumeItem{Configured Proxmox, Kubernetes, and TrueNAS (RAIDZ1) on a personal server for scalable deployment.}
+          \resumeItem{Developed Terragrunt modules to provision Proxmox VMs and LXC containers with cloud-init.}
+          \resumeItem{Deployed Komodo via Terragrunt and cloud-init, syncing Docker Compose configs from Git for GitOps.}
+          \resumeItem{Configured OpenTelemetry, Mimir, and Grafana to monitor resource usage across Proxmox VMs and hosts.}
+          \resumeItem{Managed secrets using SOPS with age encryption, integrated with Bitwarden Secrets Manager.}
+          \resumeItem{Enabled secure access and deployment with Tailscale and GitHub Actions.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -180,28 +188,15 @@
       {Bachelor of Science in Computer Science, Minor in Japanese}{Sep. 2019 -- Jul. 2024}
   \resumeSubHeadingListEnd
 
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-        {\textbf{Homelab} $|$ \emph{Kubernetes, Proxmox, Docker, Portainer, Tailscale}}{}
-        \resumeItemListStart
-          \resumeItem{Configured Proxmox and a Kubernetes cluster on a personal server for scalable deployment.}
-          \resumeItem{Set up TrueNAS with RAIDZ1 for network-attached storage, enhancing data redundancy and access.}
-          \resumeItem{Installed monitoring dashboards with Prometheus and Grafana.}
-          \resumeItem{Used Portainer for hosting web applications for personal use.}
-          \resumeItem{Enabled secure access and deployment with Tailscale and GitHub Actions.}
-        \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Tools \& Platforms}{: EKS, GitLab CI/CD, GitHub Actions, Docker, Proxmox, AWS, Bash, Git, Unix} \\
-      \textbf{Languages \& Technologies}{: Java, Python, C\#, Kubernetes, Terraform, SQL, Helm, Kustomize} \\
-      \textbf{Frameworks}{: .NET Core, Spring, ExpressJS}
+      \textbf{Infrastructure}{: Kubernetes, EKS, Terraform, Terragrunt, Helm, Kustomize, FluxCD, Karpenter, Docker, Proxmox} \\
+      \textbf{CI/CD \& Automation}{: GitHub Actions, GitLab CI/CD, Jenkins, Job DSL, JCasC} \\
+      \textbf{Observability \& Networking}{: Grafana, Prometheus, OpenTelemetry, Mimir, External DNS, Gateway API} \\
+      \textbf{Cloud \& Tools}{: AWS, SOPS, External Secrets, Kafka, RabbitMQ, Git, Bash, Unix} \\
+      \textbf{Languages}{: Python, C\#, Java, SQL, HCL}
     }}
   \end{itemize}
 
